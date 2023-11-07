@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&family=Poppins:wght@200;300&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+}
+body{
+  background-color: #fafbfc;
+  overflow-x: hidden;
+}
+.nav-container{
+    height: 70px;
+    font-size: 13px;
+    /* margin-top:10px; */
+   
+}
+.nav-link{
+  color:#000;
+}
+/* nav-link cart */
+.cart{
+  background-color: #28a745; color: #fff;
+}
+.navbar .dropdown-menu {
+  z-index: 1000 !important; /* Adjust the value as needed */
+}
+.scrollable-section {
+  height: 800px; /* Adjust the height as per your preference */
+  overflow-y: auto;
+}
+.scrollable-section-1 {
+  height: 300px; /* Adjust the height as per your preference */
+  overflow-y: auto;
+  z-index: 1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a.dropdown-toggle {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+
+a.dropdown-toggle:hover {
+  color: blue;
+}
+/* Custom CSS to position the search icon */
+.search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #800080;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+/* Custom CSS to reduce padding gap between navbar items */
+.navbar-nav-custom .nav-item {
+  margin-right: 10px; /* Adjust this value as needed to reduce the gap */
+}
+
+/* Optional: To reduce the gap before the "User Dashboard" dropdown */
+.navbar-nav-custom .nav-item.dropdown {
+  margin-right: 0; /* Remove margin for this specific dropdown item */
+}
+@media (min-width: 1024px) {
+  .logo-nav {
+      display: none;
+  }
+}
+@media (max-width: 768px) {
+  .top-contributors {
+      margin-top: 70px;
+  }
+  .menu-icon{
+    background-color: #fff;
+    position: relative;
+    bottom: 22rem;
+  }
+  .logo-nav {
+    width:8em;
+}
+  .logo{
+    visibility: hidden; 
+  }
+  .middle-column{
+    margin-top: -12rem !important;
+  }
+  
+.box-border{
+  border:1px solid #fff !important;  
+}
+  .lcs{
+    display: none;
+  }
+  .logo-nav-1 {
+    /* display: none; */
+    visibility: hidden; 
+}
+@media (max-width: 320px){
+  .menu-icon{ 
+    bottom: 24rem !important;
+  }
+}
+}
+p a{
+    text-decoration: none;
+    font-size: 12px;
+    color:#000;
+}
+ p a:hover {
+   
+    color: blue;
+  }
+ 
+  .col li{
+    list-style: none;
+  }
+
+ p {
+    font-size: 17px !important;
+ }
+
+ .border-12{
+    border-bottom: 2px solid #d8b1db;
+ }
+ .border-11{
+    border-top: 2px solid #d8b1db;
+    border-bottom: 2px solid #d8b1db;
+ }
+
+ @media only screen and (max-width: 768px) {
+   .top-contributors {
+      display: none;
+   }
+ }
+ /* @media only screen and (max-width: 425px) {
+   .search
+ {
+     margin-top:70px;
+   }
+ } */
+.top-head{
+  font-size: 18px;
+}
+
+ /* like-comment-share */
+ .icons{
+  width: 150px; background-color:#b671b5;font-size: 12px;
+ }
+
+ .card-1{
+  font-size: 17px !important;
+ }
+
+ @media (max-width: 768px) {
+  /* Add any responsive styling specific to tablet-sized screens */
+  /* For example, you can change font sizes or margins here */
+  .nav-container {
+      font-size: 12px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+@media (max-width: 768px) {
+  .refuse {
+      display: none; /* Hide elements with the 'refuse' class on tablets */
+  }
+.m-c{
+  width:150% !important;
+}
+}
+/* loadmore btn */
+.load-more{
+  background-color: #800080;
+}
