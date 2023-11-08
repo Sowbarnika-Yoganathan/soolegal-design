@@ -228,11 +228,30 @@ p {
 @media (max-width: 768px) {
  
   .Select-1{
+    width:95px !important;
+  }
+.Select{
+  width: 128px !important;
+}
+}
+@media (max-width: 1024px) {
+ 
+  .Select-1{
     width:115px !important;
   }
-
+.Select{
+  width: 180px !important;
 }
-
+}
+@media (max-width: 2560px) {
+ 
+  .Select-1{
+    width:150px !important;
+  }
+.Select{
+  width: 160px !important;
+}
+}
 /* .container-fluid.block{
   background-image: url(/frontend/css/img/index-main.jpg);
   background-color: #081828;
@@ -259,3 +278,7 @@ p {
   }
 
 } */
+textarea {
+  width: 90% !important;
+  margin: 0 auto !important;
+}

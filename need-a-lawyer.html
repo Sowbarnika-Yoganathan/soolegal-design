@@ -71,7 +71,7 @@
 
         @media (max-width: 425px) {
             .card-title {
-                width: 38% !important;
+                width: 50% !important;
             }
         }
     </style>
@@ -137,7 +137,7 @@
 
     <div class="container mt-3" style="height: 100vh;">
         <div class="h4 fw-bold" style="color: #5f9ea0;">QUERY BOARD</div>
-        <div class="py-3 px-4 mb-3 sticky-top" style="background-color: #dcdcdc; ">
+        <div class="py-3 px-4 mb-3 sticky-top rounded-2" style="background-color: #dcdcdc; ">
             <div class="row seven-cols d-flex justify-content-between">
                 <div class="col-md-2">
                     <div class="dropdown custom-dropdown">
@@ -181,15 +181,16 @@
                     </div>
                 </div>
                 <div class="col-md-1"> <button type="button"
-                        class="btn btn-info text-dark border-0 my-1 dropdown fw-bold Select" data-bs-toggle="dropdown"
+                        class="btn btn-info text-dark border-0 my-1 dropdown fw-bold Select-1" data-bs-toggle="dropdown"
                         style="font-size: 13px;">
                         Sort
                     </button></div>
-                <div class="col-md-1">
+                <div class="col-md-1 my-2">
                     <!-- <button type="button"
                         class="btn text-dark border-0 dropdown my-1 fw-bold btn-1 Select" data-bs-toggle="dropdown"
                         style="font-size: 13px;"> -->
-                        Reset
+                        <img src="frontend/css/img/icons8-reset-24.png" alt="">
+                        
                     </button></div>
             </div>
         </div>
@@ -197,7 +198,39 @@
         <div class="row">
             <div class="col-lg-8">
                 <!-- card-1 -->
-                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #000;">
+                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #b1afaf;">
+                    <div class="card-body">
+                        
+                        <span><span class="fw-bold"> Legal Topic: </span><span style="color: #800080;"
+                                class="fw-bold">Divorce</span> </span>
+                                <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold my-3" style="background-color: #8530d1; width:17%; font-size: 14px;
+                        ">Sowbarnika</h5>
+                        <p class="card-text">I am seeking only Opinion in city : Tiruppur | Posted On : 17-07-2023,10:53
+                            AM</p>
+                        <div class="d-flex justify-content-between flex-column flex-md-row">
+                            <div class="div-1 col text-center text-md-start mb-2 mb-md-0">
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">Respond</a>
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">View Response</a>
+                                <a href="#" class="fw-bold" style="color: #800080;"> | Delete</a>
+                            </div>
+                            <div class="div-2 col mt-2 d-flex justify-content-center justify-content-md-end">
+                                <span class="justify-content-md-start mb-2 mb-md-0">
+                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">(1)
+                                </span>
+                                <span class="justify-content-md-start">
+                                    <img src="frontend/css/img/left-share.png" alt="" style="width: 18px;" class="mx-2">
+                                    (9)
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #b1afaf;">
                     <div class="card-body">
                         <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold" style="background-color: #8530d1; width:17%; font-size: 14px;
                         ">Sowbarnika</h5>
@@ -215,11 +248,11 @@
                             </div>
                             <div class="div-2 col mt-2 d-flex justify-content-center justify-content-md-end">
                                 <span class="justify-content-md-start mb-2 mb-md-0">
-                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">1
+                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">(1)
                                 </span>
                                 <span class="justify-content-md-start">
                                     <img src="frontend/css/img/left-share.png" alt="" style="width: 18px;" class="mx-2">
-                                    9
+                                    (9)
                                 </span>
                             </div>
                         </div>
@@ -227,36 +260,8 @@
 
                     </div>
                 </div>
-                <!-- card-2 -->
-                <div class="card shadow-sm p-3 mb-3 bg-body rounded">
-                    <div class="card-body">
-                        <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold" style="background-color: #8530d1; width:17%; font-size: 14px;
-                        ">Sowbarnika</h5>
-                        <span><span class="fw-bold"> Legal Topic: </span><span style="color: #800080;"
-                                class="fw-bold">Divorce</span> </span>
-                        <p class="card-text" style="font-size: 1em !important;">I am seeking only Opinion in city :
-                            Tiruppur | Posted On : 17-07-2023,10:53
-                            AM</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="div-1">
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">Respond</a>
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">View Response</a>
-                                <a href="#" class="fw-bold" style="color: #800080;"> | Delete</a>
-                            </div>
-                            <div class="div-2 mt-2">
-                                <span class="pe-3"><img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;"
-                                        class="mx-2">1</span>
-                                <span class="pe-3"><img src="frontend/css/img/left-share.png" alt=""
-                                        style="width: 18px;" class="mx-2"> 9</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- card-3 -->
-                <div class="card shadow-sm p-3 mb-3 bg-body rounded">
-
+                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #b1afaf;">
                     <div class="card-body">
                         <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold" style="background-color: #8530d1; width:17%; font-size: 14px;
                         ">Sowbarnika</h5>
@@ -264,81 +269,96 @@
                                 class="fw-bold">Divorce</span> </span>
                         <p class="card-text">I am seeking only Opinion in city : Tiruppur | Posted On : 17-07-2023,10:53
                             AM</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="div-1">
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">Respond</a>
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">View Response</a>
+                        <div class="d-flex justify-content-between flex-column flex-md-row">
+                            <div class="div-1 col text-center text-md-start mb-2 mb-md-0">
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">Respond</a>
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">View Response</a>
                                 <a href="#" class="fw-bold" style="color: #800080;"> | Delete</a>
                             </div>
-                            <div class="div-2 mt-2">
-                                <span class="pe-3"><img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;"
-                                        class="mx-2">1</span>
-                                <span class="pe-3"><img src="frontend/css/img/left-share.png" alt=""
-                                        style="width: 18px;" class="mx-2"> 9</span>
+                            <div class="div-2 col mt-2 d-flex justify-content-center justify-content-md-end">
+                                <span class="justify-content-md-start mb-2 mb-md-0">
+                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">(1)
+                                </span>
+                                <span class="justify-content-md-start">
+                                    <img src="frontend/css/img/left-share.png" alt="" style="width: 18px;" class="mx-2">
+                                    (9)
+                                </span>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
                 <!-- card-4  -->
-                <div class="card shadow-sm p-3 mb-3 bg-body rounded">
-
+                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #b1afaf;">
                     <div class="card-body">
-                        <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold" style="background-color: #8530d1; width:17%; font-size: 14px;
-                        ">Sowbarnika</h5>
+                        
                         <span><span class="fw-bold"> Legal Topic: </span><span style="color: #800080;"
                                 class="fw-bold">Divorce</span> </span>
+                                <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold my-3" style="background-color: #8530d1; width:17%; font-size: 14px;
+                        ">Sowbarnika</h5>
                         <p class="card-text">I am seeking only Opinion in city : Tiruppur | Posted On : 17-07-2023,10:53
                             AM</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="div-1">
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">Respond</a>
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">View Response</a>
+                        <div class="d-flex justify-content-between flex-column flex-md-row">
+                            <div class="div-1 col text-center text-md-start mb-2 mb-md-0">
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">Respond</a>
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">View Response</a>
                                 <a href="#" class="fw-bold" style="color: #800080;"> | Delete</a>
                             </div>
-                            <div class="div-2 mt-2">
-                                <span class="pe-3"><img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;"
-                                        class="mx-2">1</span>
-                                <span class="pe-3"><img src="frontend/css/img/left-share.png" alt=""
-                                        style="width: 18px;" class="mx-2"> 9</span>
+                            <div class="div-2 col mt-2 d-flex justify-content-center justify-content-md-end">
+                                <span class="justify-content-md-start mb-2 mb-md-0">
+                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">(1)
+                                </span>
+                                <span class="justify-content-md-start">
+                                    <img src="frontend/css/img/left-share.png" alt="" style="width: 18px;" class="mx-2">
+                                    (9)
+                                </span>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
                 <!-- card-5 -->
-                <div class="card shadow-sm p-3 mb-3 bg-body rounded">
-
+                <div class="card shadow-sm p-3 mb-3 bg-body rounded" style="background-color: #eaebeb !important; border-bottom: 2px solid #b1afaf;">
                     <div class="card-body">
-                        <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold" style="background-color: #8530d1; width:17%; font-size: 14px;
-                        ">Sowbarnika</h5>
-                        <span><span class="fw-bolder"> Legal Topic: </span><span style="color: #800080;"
+                        
+                        <span><span class="fw-bold"> Legal Topic: </span><span style="color: #800080;"
                                 class="fw-bold">Divorce</span> </span>
+                                <h5 class="card-title px-3 py-2 text-white rounded-5 fw-bold my-3" style="background-color: #8530d1; width:17%; font-size: 14px;
+                        ">Sowbarnika</h5>
                         <p class="card-text">I am seeking only Opinion in city : Tiruppur | Posted On : 17-07-2023,10:53
                             AM</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="div-1">
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">Respond</a>
-                                <a href="#" class="btn btn-white fw-bold"
-                                    style="border: 1px solid #800080 ; color: #800080;">View Response</a>
+                        <div class="d-flex justify-content-between flex-column flex-md-row">
+                            <div class="div-1 col text-center text-md-start mb-2 mb-md-0">
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">Respond</a>
+                                <a href="#" class="btn btn-white fw-bold mb-2"
+                                    style="border: 1px solid #800080; color: #800080;">View Response</a>
                                 <a href="#" class="fw-bold" style="color: #800080;"> | Delete</a>
                             </div>
-                            <div class="div-2 mt-2">
-                                <span class="pe-3"><img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;"
-                                        class="mx-2">1</span>
-                                <span class="pe-3"><img src="frontend/css/img/left-share.png" alt=""
-                                        style="width: 18px;" class="mx-2"> 9</span>
+                            <div class="div-2 col mt-2 d-flex justify-content-center justify-content-md-end">
+                                <span class="justify-content-md-start mb-2 mb-md-0">
+                                    <img src="frontend/css/img/icons8-eye-24.png" style="width: 18px;" class="mx-2">(1)
+                                </span>
+                                <span class="justify-content-md-start">
+                                    <img src="frontend/css/img/left-share.png" alt="" style="width: 18px;" class="mx-2">
+                                    (9)
+                                </span>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card shadow-sm p-3 mb-5 bg-body rounded">
+                <div class="card shadow-sm p-3 mb-5 bg-body rounded border-0" style="background-color: #eaebeb !important;">
                     <p class="text-center fs-4 fw-bold" style="color: #5f9ea0;">PRACTICE AREAS</p>
                     <div class="px-4">
                         <P class="text-hover">Indirect Taxes/GST/VAT</P>
