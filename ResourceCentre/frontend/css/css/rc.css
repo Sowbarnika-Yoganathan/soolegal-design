@@ -57,7 +57,7 @@
   width: 100%;
   height: 100%;
   /* background-image: linear-gradient(to bottom, rgba(8, 24, 40, 0.3), rgba(8, 24, 40, 0.3)), url(frontend/css/img/index-main.jpg); */
-  background-image: linear-gradient(0deg, #ff009900, rgba(0, 0, 0, 0.5)), url(/frontend/css/img/index-main.jpg);
+  background-image: linear-gradient(0deg, #ff009900, rgba(0, 0, 0, 0.5)), url(/ResourceCentre/frontend/css/img/index-main.jpg);
   background-position: center;
   background-size: cover;
   z-index: -1;

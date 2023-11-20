@@ -1,0 +1,15 @@
+.bg {
+    background-image: url(/ResourceCentre/frontend/css/img/rc-bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    margin-top: 0; /* Adjust as needed */
+    margin-bottom: 0; /* Adjust as needed */
+  }
+
+  .drop:hover{
+    background-color: white;
+    
+  }
