@@ -37,3 +37,15 @@
   color: #4573d6;
   background-color:#4573d6;
 }
+
+/* Default width for mobile */
+.custom-input {
+  width: 100%;
+}
+
+/* Adjust width for desktop using media query */
+@media (min-width: 768px) {
+  .custom-input {
+      width: 25%;
+  }
+}
