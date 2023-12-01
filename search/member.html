@@ -22,86 +22,187 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="d-flex justify-content-between">
-      <p class="h5 my-3 text-primary">Search In
-        <!-- <img src="/search/frontend/css/img/blue-ra.png" alt="" style="width: 36px;">  -->
-      </p>
-      <ul class="nav nav-underline my-2">
-        <li class="nav-item mx-5 fw-bold">
-          <a class="nav-link" href="#">Members</a>
-        </li>
-        <li class="nav-item mx-5 fw-bold">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item mx-5 fw-bold">
-          <a class="nav-link" href="#">Event</a>
-        </li>
-        <li class="nav-item mx-5 fw-bold">
-          <a class="nav-link" aria-disabled="true">Document</a>
-        </li>
-      </ul>
-    </div>
-    <hr>
+  
+<div class="container">
+  <div>
+    
+    <ul class=" d-flex justify-content-between nav nav-underline my-2 flex-wrap">
+      <p class="h5 my-3 text-primary">Search In</p>
+      <li class="nav-item mx-2 mt-2 fw-bold">
+        <a class="nav-link" href="#">Members</a>
+      </li>
+      <li class="nav-item mx-2 mt-2 fw-bold">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item mx-2 mt-2 fw-bold">
+        <a class="nav-link" href="#">Event</a>
+      </li>
+      <li class="nav-item mx-2 mt-2 fw-bold">
+        <a class="nav-link" aria-disabled="true">Document</a>
+      </li>
+    </ul>
   </div>
+  <hr>
+</div>
 
   <div class="container">
-    <div class="card">
-      <div class="card-header text-white" style="background-color: rgb(3, 3, 75) ;">
-        <div class="d-flex justify-content-between mt-2">
-          <div class="div-1">
-            <p>Top Lawyers</p>
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="card">
+          <div class="card-header text-white" style="background-color:#00354e;">
+            <div class="d-flex justify-content-between mt-2">
+              <div class="div-1">
+                <p>Top Lawyers</p>
+              </div>
+              <div class="div-2 d-flex flex-wrap">
+                <label class="me-2">Sort by</label>
+                <div class="form-check mx-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    New member
+                  </label>
+                </div>
+                <div class="form-check mx-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Name
+                  </label>
+                </div>
+                <div class="form-check mx-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    City
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="div-2 d-flex">
-            <label> Sort by</label>
-            <div class="form-check mx-3">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                New member
-              </label>
+          <div class="card-body d-flex flex-column flex-md-row">
+            <div class="text-center mb-3 mb-md-0">
+              <h5 class="card-title"><img src="/search/frontend/css/img/card-1.png" alt="" style="width: 50px;"></h5>
             </div>
-            <div class="form-check mx-3">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Name
-              </label>
+            <div class="mx-3 mx-md-5 fw-semibold">
+              <p class="card-text text-primary"><a href="#" 
+                class="text-decoration-none fs-4">SUN LEGAL CONFIDENTIAL</a></p>
+              <p class="card-text">Lawyer</p>
+              <p class="card-text text-primary"><a href="mailto:mayarjun@gmail.com"  class="text-decoration-none">sunlegalconfidential@gmail.com</a></p>
+              <p class="card-text"><img src="/search/frontend/css/img/pin.png" alt="" style="width: 15px;">New Delhi, India</p>
+              <div class="my-2">
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+              </div>
             </div>
-            <div class="form-check mx-3">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                City
-              </label>
+            <div class="text-center mt-3 mt-md-0">
+              <button class="btn btn-white border border-warning"><small>View Profile</small></button>
+            </div>
+          </div>
+          <hr class="w-75" style="margin:auto;">
+          <div class="card-body d-flex flex-column flex-md-row">
+            <div class="text-center mb-3 mb-md-0">
+              <h5 class="card-title"><img src="/search/frontend/css/img/card-1.png" alt="" style="width: 50px;"></h5>
+            </div>
+            <div class="mx-3 mx-md-5 fw-semibold">
+              <p class="card-text text-primary"><a href="#" 
+                class="text-decoration-none fs-4">SUN LEGAL CONFIDENTIAL</a></p>
+              <p class="card-text">Lawyer</p>
+              <p class="card-text text-primary"><a href="mailto:mayarjun@gmail.com"  class="text-decoration-none">sunlegalconfidential@gmail.com</a></p>
+              <p class="card-text"><img src="/search/frontend/css/img/pin.png" alt="" style="width: 15px;">New Delhi, India</p>
+              <div class="my-2">
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+              </div>
+            </div>
+            <div class="text-center mt-3 mt-md-0">
+              <button class="btn btn-white border border-warning"><small>View Profile</small></button>
+            </div>
+          </div>
+          <hr class="w-75" style="margin:auto;">
+          <div class="card-body d-flex flex-column flex-md-row">
+            <div class="text-center mb-3 mb-md-0">
+              <h5 class="card-title"><img src="/search/frontend/css/img/card-1.png" alt="" style="width: 50px;"></h5>
+            </div>
+            <div class="mx-3 mx-md-5 fw-semibold">
+              <p class="card-text text-primary"><a href="#" 
+                class="text-decoration-none fs-4">SUN LEGAL CONFIDENTIAL</a></p>
+              <p class="card-text">Lawyer</p>
+              <p class="card-text text-primary"><a href="mailto:mayarjun@gmail.com"  class="text-decoration-none">sunlegalconfidential@gmail.com</a></p>
+              <p class="card-text"><img src="/search/frontend/css/img/pin.png" alt="" style="width: 15px;">New Delhi, India</p>
+              <div class="my-2">
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Property Law</a>
+                <a href="#" class="btn border border-1 my-1 mx-1">Criminal Law</a>
+              </div>
+            </div>
+            <div class="text-center mt-3 mt-md-0">
+              <button class="btn btn-white border border-warning"><small>View Profile</small></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="card-body d-flex">
-        <div>
-          <h5 class="card-title"><img src="/search/frontend/css/img/BA-col1.jpg" alt="" style="width: 90px;"></h5>
-        </div>
-        <div class="mx-5 fw-semibold">
-          <p class="card-text text-primary"><a href=""></a>Sowbarnika</a></p>
-          <p class="card-text">Lawyer</p>
-          <p class="card-text text-primary"><a href=""></a>Mayarjun@gmail.com</a></p>
-          <p class="card-text">Tiruppur,India</p>
-          <div class="my-2">
-            <a href="" class="btn border border-1 my-1 mx-1">Property Law</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Criminal Law</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Criminal Acts</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Cheque Bounce</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Consumer Issues</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Dispute Resolutions</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Corporate Matters</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Labour Law</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Constitution Law</a>
-            <a href="" class="btn border border-1 my-1 mx-1">Intellectual Property</a>
+      <div class="col-sm-3">
+        <div class="card">
 
+          <div class="text-dark mb-3 mt-4 mx-3" style="max-width: 20rem; height: 400px;">
+            <div class="" style="height: 500px;">
 
+              <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p class="d-block w-100"
+                      style="border: 4px solid #b671b5; border-radius: 20px;height: 400px; background-image: linear-gradient(red, yellow);">
+                    </p>
+
+                  </div>
+                  <div class="carousel-item">
+                    <p class="d-block w-100"
+                      style="border: 4px solid #b671b5; border-radius: 20px;height: 400px; background-image: linear-gradient(green, blue);">
+                    </p>
+
+                  </div>
+                  <div class="carousel-item">
+                    <p class="d-block w-100"
+                      style="border: 4px solid #b671b5; border-radius: 20px;height: 400px; background-image: linear-gradient(pink, orange);">
+                    </p>
+
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
           </div>
 
-        </div>
-        <div>
-          <button>view more</button>
         </div>
       </div>
     </div>
