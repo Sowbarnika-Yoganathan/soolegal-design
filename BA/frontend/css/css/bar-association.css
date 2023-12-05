@@ -33,3 +33,12 @@ font-family: 'Poppins', sans-serif;
     border-top: 2px solid #d8b1db;
     border-bottom: 2px solid #d8b1db;
  }
+
+ .scrollable-section {
+   height: 550px;
+   overflow-y: auto;
+ }
+ ::-webkit-scrollbar {
+   display: none;
+ }
+ 
