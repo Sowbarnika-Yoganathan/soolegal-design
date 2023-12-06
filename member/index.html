@@ -16,18 +16,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="/BA/frontend/css/js/style.js"></script>
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
         }
 
         #box {
-            border: 10px solid #000;
+            border: 0px solid #000;
             position: relative;
         }
 
         #box img {
             display: block;
-            width: 100%; /* Make images responsive */
+            width: 100%;
+            /* Make images responsive */
             height: auto;
         }
 
@@ -37,10 +39,12 @@
 
         #box .cat {
             position: absolute;
-            top: 25%;
+            top: 60%;
             left: 10%;
             width: 15%;
-            height:300px;
+            height: 190px;
+            border-radius: 50%;
+            border: 10px solid #fff;
         }
 
         #box .text {
@@ -51,20 +55,31 @@
             font-family: sans-serif;
         }
 
-      
+
         @media only screen and (max-width: 600px) {
             #box .cat {
-                left: 5%; 
-                width: 40%; 
+                left: 5%;
+                width: 40%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div id="box">
-        <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static">
-        <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat">
+    <div class="container">
+        <div class="card">
+            <div id="box">
+                <!-- <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static"> -->
+                <img src="/member/frontend/css/img/gradient-bg.avif" alt="" class="static">
+                <!-- <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat"> -->
+                <img src="/member/frontend/css/img/bg-profile.png" alt="" class="cat">
+            </div>
+            <div class="content mt-5">
+                <h5>Vigneshwaran M
+                    (He/Him)</h5>
+            </div>
+        </div>
+       
     </div>
 
 
