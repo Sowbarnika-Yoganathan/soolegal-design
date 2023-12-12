@@ -33,17 +33,78 @@
         }
 
         #box .static {
-            height: 35vh;
+            height: 39vh;
+        }
+
+        @media(max-width:1000px) and (min-width:220px) {
+            #box .static {
+                height: 16vh;
+            }
+        }
+
+        @media(max-width:900px) and (min-width:750px) {
+            .img-edit {
+                width: 25px;
+                height: 28px;
+            }
         }
 
         #box .cat {
             position: absolute;
-            top: 67%;
+            top: 70%;
             left: 10%;
-            width: 13%;
+            width: 16%;
             height: 132px;
             border-radius: 50%;
             border: 5px solid #fff;
+        }
+
+        @media (max-width:1024px) {
+            #box .cat {
+                position: absolute;
+                top: 34%;
+                left: 10%;
+                width: 16%;
+                height: 112px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+        }
+
+        @media (max-width:768px) {
+            #box .cat {
+                position: absolute;
+                top: 34%;
+                left: 10%;
+                width: 23%;
+                height: 112px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+        }
+
+        @media (max-width:425px) {
+            #box .cat {
+                position: absolute;
+                top: 34%;
+                left: 10% !important;
+                width: 28% !important;
+                height: 112px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+        }
+
+        @media (max-width:320px) {
+            #box .cat {
+                position: absolute;
+                top: 34%;
+                left: 10% !important;
+                width: 36% !important;
+                height: 112px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
         }
 
         #box .text {
@@ -61,14 +122,47 @@
                 width: 40%;
             }
         }
-        .ap-btn{
-            transition: 0.3s;
+
+        .ap-btn,
+        .more-btn {
+            transition: 0.1s;
         }
-        .ap-btn:hover{
-            background-color: #748fb8;
+
+        .ap-btn:hover {
+            background-color: #b6d3fe;
             color: #0d6efd;
             font-weight: bold;
-           
+            border: 3px solid #0d6efd;
+
+        }
+
+        .more-btn:hover {
+            background-color: #c1c1c1;
+            color: #656565;
+            font-weight: bold;
+            border: 3px solid #656565;
+        }
+
+        @media (max-width:900px) and (min-width:500px) {
+            .image-1 {
+                width: 60px !important;
+            }
+
+            .ap-btn {
+                width: 100% !important;
+            }
+            .op-btn,.more-btn{
+                width:100% !important;
+                padding: 0px;
+                height: 41px;
+            }
+        }
+        @media(max-width:320px){
+            .op-btn,.more-btn{
+                width:100% !important;
+                height: 41px;
+                padding: 0px;
+            }
         }
     </style>
 
@@ -76,61 +170,99 @@
 
 <body>
     <div class="container">
-        <div class="row mt-4">
-            <div class="col-md-9 mx-auto">
-                <div class="card">
+        <div class="row">
+            <div class="col-md-8 mx-auto rounded-3 my-5">
+                <div class="card rounded-4">
                     <div id="box">
                         <!-- <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static"> -->
-                        <img src="/member/frontend/css/img/gradient-bg.avif" alt="" class="static img-fluid">
+                        <img src="/member/frontend/css/img/grey-gradient-bg.avif" alt="" class="static img-fluid"
+                            style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                         <!-- <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat"> -->
                         <img src="/member/frontend/css/img/bg-profile.png" alt="" class="cat img-fluid">
                     </div>
-                    <div class="content my-5 mx-4">
-                        <h5 class="mt-3">Vigneshwaran M (He/Him)</h5>
+                    <div class="my-4 mx-4">
+                        <h5 class="mt-5 ">Vigneshwaran M (He/Him)</h5>
                         <p>Back End Developer (Laravel / Codeignitor ) | Frontend Angular , React | Rest API | MySQL</p>
-                        Coimbatore, Tamil Nadu, India <a href=""  class="text-decoration-none fw-bold mx-2"> Contact info</a>
-                        <p> <a href="" class="text-decoration-none fw-bold">1 connection</a></p>
+                        <p>Coimbatore, Tamil Nadu, India <a href="" class="text-decoration-none fw-bold mx-2">Contact
+                                info</a></p>
+                        <p><a href="" class="text-decoration-none fw-bold">1 connection</a></p>
+
 
                         <div class="d-flex">
-                            <button class="btn btn-primary rounded-5">Open to</button>
-                            <button class="btn btn-outline-primary text-primary mx-5 rounded-5 ap-btn">Add Profile Section</button>
-                            <button class="btn btn-outline-secondary text-secondary rounded-5 more-btn"> More </button>
+                            <button class="btn btn-primary rounded-5 op-btn">Open to</button>
+                            <button class="btn btn-outline-primary text-primary mx-3 mx-md-5 rounded-5 ap-btn">Add
+                                Profile
+                                Section</button>
+                            <button class="btn btn-outline-secondary text-secondary rounded-5 more-btn">More</button>
                         </div>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <div class="card w-100 mb-3 mb-md-0">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fw-semibold">Open to work</span>
+                                            <img src="/member/frontend/css/img/icons8-edit-24.png" alt="f">
 
-                        <div class="d-flex">
-                            <div class="modal" tabindex="-1">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title">Modal title</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <span>Back End Developer roles</span><br>
+                                        <a href="#" class="text-decoration-none"><span>Show details</span></a>
                                     </div>
-                                    <div class="modal-body">
-                                      <p>Modal body text goes here.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="card w-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fw-semibold">Share that you’re hiring and attract</span><br>
+                                            <img src="/member/frontend/css/img/icons8-x-24.png" alt="f">
+
+                                        </div>
+                                        <span>qualified candidates.</span><br>
+                                        <a href="#" class="text-decoration-none"><span>Get started</span></a>
                                     </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                  <div class="d-flex justify-content-between mx-3 my-3">
-                    <p>Profile language</p>
-                    <img src="/member/frontend/css/img/icons8-edit-30.png" alt="nnm">
-                  </div>
+            <div class="col-md-4 my-5">
+                <div class="card px-3 py-3 rounded-4">
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-semibold fs-4">Profile language</span>
+                        <img src="/member/frontend/css/img/icons8-edit-30.png" class="img-edit" alt="nnm">
+                    </div>
+                    <span>English</span>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-semibold fs-4">Public profile & URL</span>
+                        <img src="/member/frontend/css/img/icons8-edit-30.png" class="img-edit" alt="nnm">
+                    </div>
+                    <span>www.linkedin.com/in/vigneshwaran8385</span>
+                </div>
+                <div class="card text-center my-5 py-3 rounded-4">
+
+                    <span class="text-end px-3 fs-5 fw-semibold">Ad <span class="fw-bold">...</span></span>
+
+                    <p>Get tips for your business innovation with Hitachi.</p>
+                    <div class="d-flex justify-content-center my-3">
+                        <img src="/member/frontend/css/img/slider-detail-logo.png" alt=""
+                            style="width:110px; border-radius:80px" class="
+                            image-1">
+
+                        <img src="/member/frontend/css/img/hitachii.jpg" alt="" style="width:110px;"
+                            class="mx-3 image-1">
+                    </div>
+                    <span class="fs-5 fw-semibold">Hitachi Social Innovation is POWERING GOOD</span><br>
+                    <button
+                        class="btn btn-outline-primary text-primary rounded-5 w-25 w-sm-100 mx-auto mt-3 ap-btn">Follow</button>
+
                 </div>
             </div>
         </div>
-       
+
 
 </body>
 
 
-</html> 
+</html>
