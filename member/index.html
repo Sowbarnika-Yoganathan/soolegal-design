@@ -29,22 +29,21 @@
         #box img {
             display: block;
             width: 100%;
-            /* Make images responsive */
             height: auto;
         }
 
         #box .static {
-            height: 40vh;
+            height: 35vh;
         }
 
         #box .cat {
             position: absolute;
-            top: 60%;
+            top: 67%;
             left: 10%;
-            width: 15%;
-            height: 190px;
+            width: 13%;
+            height: 132px;
             border-radius: 50%;
-            border: 10px solid #fff;
+            border: 5px solid #fff;
         }
 
         #box .text {
@@ -62,29 +61,76 @@
                 width: 40%;
             }
         }
+        .ap-btn{
+            transition: 0.3s;
+        }
+        .ap-btn:hover{
+            background-color: #748fb8;
+            color: #0d6efd;
+            font-weight: bold;
+           
+        }
     </style>
+
 </head>
 
 <body>
     <div class="container">
-        <div class="card">
-            <div id="box">
-                <!-- <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static"> -->
-                <img src="/member/frontend/css/img/gradient-bg.avif" alt="" class="static">
-                <!-- <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat"> -->
-                <img src="/member/frontend/css/img/bg-profile.png" alt="" class="cat">
+        <div class="row mt-4">
+            <div class="col-md-9 mx-auto">
+                <div class="card">
+                    <div id="box">
+                        <!-- <img src="https://c1.staticflickr.com/3/2205/2359335117_08ae4ef88f_b.jpg" class="static"> -->
+                        <img src="/member/frontend/css/img/gradient-bg.avif" alt="" class="static img-fluid">
+                        <!-- <img src="https://media4.giphy.com/media/hBayJ7ZgH5S3C/200_s.gif" class="cat"> -->
+                        <img src="/member/frontend/css/img/bg-profile.png" alt="" class="cat img-fluid">
+                    </div>
+                    <div class="content my-5 mx-4">
+                        <h5 class="mt-3">Vigneshwaran M (He/Him)</h5>
+                        <p>Back End Developer (Laravel / Codeignitor ) | Frontend Angular , React | Rest API | MySQL</p>
+                        Coimbatore, Tamil Nadu, India <a href=""  class="text-decoration-none fw-bold mx-2"> Contact info</a>
+                        <p> <a href="" class="text-decoration-none fw-bold">1 connection</a></p>
+
+                        <div class="d-flex">
+                            <button class="btn btn-primary rounded-5">Open to</button>
+                            <button class="btn btn-outline-primary text-primary mx-5 rounded-5 ap-btn">Add Profile Section</button>
+                            <button class="btn btn-outline-secondary text-secondary rounded-5 more-btn"> More </button>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="modal" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Modal body text goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content mt-5">
-                <h5>Vigneshwaran M
-                    (He/Him)</h5>
+            <div class="col-md-3">
+                <div class="card">
+                  <div class="d-flex justify-content-between mx-3 my-3">
+                    <p>Profile language</p>
+                    <img src="/member/frontend/css/img/icons8-edit-30.png" alt="nnm">
+                  </div>
+                </div>
             </div>
         </div>
        
-    </div>
-
-
-
 
 </body>
 
-</html>
+
+</html> 
